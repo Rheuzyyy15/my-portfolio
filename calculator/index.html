@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator </title>
+    <script src="./js/numbers.js"></script>
+    <script src="./js/operation.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #A7C7E7, #D1A7E7, #F2A9D6);
+        }
+        .calculator {
+            background: linear-gradient(to right, #E0D1F7, #D0A7F4);
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        #display1, #display2, #operator {
+            width: 325px;
+            height: 50px;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #c7a6df;
+            border-radius: 5px;
+            background: #f9ebf7;
+            color: #6c1f7d;
+        }
+        
+        .calculator .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .calculator button {
+            height: 50px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #D9A9E6;
+            color: #fff;
+            transition: background 0.2s ease;
+        }
+        .calculator button:hover {
+            background: #C88FE6;
+        }
+        .calculator button.operator {
+            background: #C58DDE;
+        }
+        .calculator button.equal {
+            background: #F2C4D1;
+            color: #6c1f7d;
+        }
+        .calculator button.equal:hover {
+            background: #F0A7C0;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display1" value="0">
+        <input type="text" id="display2" value="0" hidden>
+        <input type="text" id="operator">
+        
+        <div class="buttons">
+            <button onclick="seven()">7</button>
+            <button onclick="eight()">8</button>
+            <button onclick="nine()">9</button>
+            <button class="operator" onclick="plus()">+</button>
+            <button onclick="four()">4</button>
+            <button onclick="five()">5</button>
+            <button onclick="six()">6</button>
+            <button class="operator" onclick="minus()">-</button>
+            <button onclick="one()">1</button>
+            <button onclick="two()">2</button>
+            <button onclick="three()">3</button>
+            <button class="operator" onclick="multiplication()">*</button>
+            <button onclick="zero()">0</button>
+            <button onclick="period()">.</button>
+            <button class="equal" onclick="equal()">=</button>
+            <button class="operator" onclick="division()">/</button>
+        </div>
+    </div>
+</body>
+</html>

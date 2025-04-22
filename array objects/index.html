@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let employees = [];
+    </script>
+
+    <script src="./js/array.js"></script>
+    <script src="./js/object.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <h2>EMPLOYEE LIST</h2>
+        
+        <input type="text" id="emp_id" placeholder="Employee ID">
+        <input type="text" id="emp_name" placeholder="Name">
+        <input type="text" id="emp_position" placeholder="Position">
+        <button type="button" onclick="addEmployee()">Add Employee</button>
+
+        <button type="button" onclick="showEmployees()">Show Employee</button>
+
+        <table id="employee" border="1">
+            <thead>
+                <tr>
+                    <td>Employee ID</td>
+                    <td>Name</td>
+                    <td>Position</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
