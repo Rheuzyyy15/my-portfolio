@@ -35,7 +35,7 @@ function App() {
             </div>
             <div className="frontpage-image-container">
               <img
-                src="src/image/pic.jpg"
+                src="image/pic.jpg"
                 alt="Hero Section Image"
                 className="frontpage-image"
               />
@@ -107,25 +107,25 @@ function App() {
           <ul>
             <li>
               <a href="https://github.com/Rheuzyyy15" target="_blank" rel="noopener noreferrer">
-                <img src="src/image/github.jpg" alt="GitHub Logo" className="social-icon" />
+                <img src="image/github.jpg" alt="GitHub Logo" className="social-icon" />
                 GitHub
               </a>
             </li>
             <li>
               <a href="https://linkedin.com/in/mery-rose-talledo-7733a4361/" target="_blank" rel="noopener noreferrer">
-                <img src="src/image/linkedin.jpg" alt="LinkedIn Logo" className="social-icon" />
+                <img src="image/linkedin.jpg" alt="LinkedIn Logo" className="social-icon" />
                 LinkedIn
               </a>
             </li>
             <li>
               <a href="https://facebook.com/maryrose.talledo" target="_blank" rel="noopener noreferrer">
-                <img src="src/image/fb.jpg" alt="Facebook Logo" className="social-icon" />
+                <img src="image/fb.jpg" alt="Facebook Logo" className="social-icon" />
                 Facebook
               </a>
             </li>
             <li>
               <a href="https://instagram.com/hllmryyy/" target="_blank" rel="noopener noreferrer">
-                <img src="src/image/ig.jpg" alt="Instagram Logo" className="social-icon" />
+                <img src="image/ig.jpg" alt="Instagram Logo" className="social-icon" />
                 Instagram
               </a>
             </li>
@@ -145,7 +145,7 @@ function App() {
             <a href="loop/index.html" target="_blank" rel="noopener noreferrer" className="project-link">
               View Project
             </a>
-            <img src="src/image/1.png" alt="Project 1 Thumbnail" className="project-thumbnail" />
+            <img src="image/1.png" alt="Project 1 Thumbnail" className="project-thumbnail" />
           </div>
 
           <div className="project">
@@ -154,7 +154,7 @@ function App() {
             <a href="calculator/index.html" target="_blank" rel="noopener noreferrer" className="project-link">
               View Project
             </a>
-            <img src="src/image/2.png" alt="Project 2 Thumbnail" className="project-thumbnail" />
+            <img src="image/2.png" alt="Project 2 Thumbnail" className="project-thumbnail" />
           </div>
 
           <div className="project">
@@ -163,7 +163,7 @@ function App() {
             <a href="array objects/index.html" target="_blank" rel="noopener noreferrer" className="project-link">
               View Project
             </a>
-            <img src="src/image/3.png" alt="Project 3 Thumbnail" className="project-thumbnail" />
+            <img src="image/3.png" alt="Project 3 Thumbnail" className="project-thumbnail" />
           </div>
 
           <div className="project">
@@ -173,8 +173,8 @@ function App() {
               Explore Project 4
             </a>
             <div className="project-images">
-              <img src="src/image/4.png" alt="Project 4 Thumbnail 1" className="project-thumbnail" />
-              <img src="src/image/5.png" alt="Project 4 Thumbnail 2" className="project-thumbnail" />
+              <img src="image/4.png" alt="Project 4 Thumbnail 1" className="project-thumbnail" />
+              <img src="image/5.png" alt="Project 4 Thumbnail 2" className="project-thumbnail" />
             </div>
           </div>
         </section>
