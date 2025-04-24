@@ -21,28 +21,68 @@ function App() {
         </ul>
       </nav>
 
-      {/* Frontpage / Hero Section */}
-      {visibleSection === 'frontpage' && (
-        <section className="frontpage">
-          <div className="frontpage-content">
-            <div className="frontpage-text">
-              <h2>Welcome to My Creative Universe</h2>
-              <p>
-                I craft exceptional digital experiences that inspire, engage,
-                and leave a lasting impression. My passion for design and development
-                fuels my commitment to pushing creative boundaries.
-              </p>
-            </div>
-            <div className="frontpage-image-container">
-              <img
-                src="image/pic.jpg"
-                alt="Hero Section Image"
-                className="frontpage-image"
-              />
-            </div>
-          </div>
-        </section>
-      )}
+{/* Frontpage / Hero Section */}
+{visibleSection === 'frontpage' && (
+  <>
+    <section className="frontpage">
+      <div className="frontpage-content">
+        <div className="frontpage-text">
+          <h2>Welcome to My Creative Universe</h2>
+          <p>
+            I craft exceptional digital experiences that inspire, engage,
+            and leave a lasting impression. My passion for design and development
+            fuels my commitment to pushing creative boundaries.
+          </p>
+        </div>
+        <div className="frontpage-image-container">
+          <img
+            src="image/pic.jpg"
+            alt="Hero Section Image"
+            className="frontpage-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    {/* Technologies Section */}
+    <section className="technologies">
+      <div className="box">
+        <h3>Technologies I Use</h3>
+        <p>Mastery of tools and frameworks is the key to bringing ideas to life:</p>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Angular, Vue</li>
+          <li>Node.js, Express.js</li>
+          <li>Python, Django, Flask</li>
+          <li>Database: MongoDB, MySQL</li>
+        </ul>
+      </div>
+    </section>
+
+    {/* Inspirational Quotes Section */}
+    <section className="quotes">
+      <div className="box">
+        <h3>Inspirational Quotes</h3>
+        <p>"Technology is best when it brings people together." - Matt Mullenweg</p>
+        <p>"Do what you can, with what you have, where you are." - Theodore Roosevelt</p>
+        <p>"The best way to predict the future is to invent it." - Alan Kay</p>
+      </div>
+    </section>
+
+    {/* Encouragement Section */}
+    <section className="encouragement">
+      <div className="box">
+        <h3>A Note of Encouragement</h3>
+        <p>
+          Every step you take toward learning and growth is a step toward success.
+          Remember, the journey is just as important as the destination. Keep
+          pushing your limits and never stop believing in your potential.
+        </p>
+      </div>
+    </section>
+  </>
+)}
+
 
       {/* About Section */}
       {visibleSection === 'about' && (
