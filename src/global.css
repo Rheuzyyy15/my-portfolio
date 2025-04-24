@@ -55,7 +55,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 80px); /* Adjusted height */
   padding: 2rem;
   box-sizing: border-box;
   margin-top: 80px;
@@ -273,10 +273,19 @@ section h2 {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .frontpage {
+    height: auto; /* Adjust height to avoid overlap */
+    margin-top: 50px; /* Reduce top margin */
+  }
+
   .frontpage-content {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+  }
+
+  .frontpage-text {
+    max-width: 100%; /* Allow frontpage text to fit in smaller screens */
   }
 
   .frontpage-image {
