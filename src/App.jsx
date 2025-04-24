@@ -207,6 +207,15 @@ function App() {
           </div>
 
           <div className="project">
+            <h3>Currency Conversion Function</h3>
+            <p>This code converts a PHP amount into various cryptocurrencies (XRP, USDT, DOGE, TRX) based on predefined rates and displays the results in corresponding input fields when the "convertButton" is clicked.</p>
+            <a href="converter activity/index.html" target="_blank" rel="noopener noreferrer" className="project-link">
+              View Project
+            </a>
+            <img src="image/6.png" alt="Project 5 Thumbnail" className="project-thumbnail" />
+          </div>
+
+          <div className="project">
             <h3>Task Management System</h3>
             <p>This project is a React-based Todo application that manages tasks by fetching data from an API. It allows users to add, edit, and delete tasks and task titles. Tasks can be marked as completed, and the app uses modals for adding new tasks. The layout consists of a left sidebar for ongoing tasks, a main content area for managing tasks, and a right sidebar for completed tasks. The project uses `useState` and `useEffect` hooks for state management, with Axios handling API requests.</p>
             <a href="https://to-do-client-a6hd.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-simple-link">
