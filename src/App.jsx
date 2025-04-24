@@ -142,7 +142,7 @@ function App() {
           <div className="project">
             <h3>Interactive Number Processing Tool</h3>
             <p>This project is an interactive tool that allows users to perform various number-based calculations. It can calculate the sum of numbers, find the factorial of a number, and list both odd and even numbers up to a chosen value. The tool provides a user-friendly experience, displaying results in real time. It’s a great example of how JavaScript can be used to create useful and interactive tools.</p>
-            <a href="loop/index.html" target="_blank" rel="noopener noreferrer" className="project-link">
+            <a href="public/loop/index.html" target="_blank" rel="noopener noreferrer" className="project-link">
               View Project
             </a>
             <img src="image/1.png" alt="Project 1 Thumbnail" className="project-thumbnail" />
@@ -151,7 +151,7 @@ function App() {
           <div className="project">
             <h3>Basic JavaScript Calculator </h3>
             <p>This code creates a simple calculator for basic math operations like addition, subtraction, multiplication, and division. Users can input numbers and decimals, perform calculations, and view results dynamically on the display.</p>
-            <a href="calculator/index.html" target="_blank" rel="noopener noreferrer" className="project-link">
+            <a href="public/calculator/index.html" target="_blank" rel="noopener noreferrer" className="project-link">
               View Project
             </a>
             <img src="image/2.png" alt="Project 2 Thumbnail" className="project-thumbnail" />
@@ -160,7 +160,7 @@ function App() {
           <div className="project">
             <h3>Employee and Name Management Tool</h3>
             <p>This tool allows users to manage a list of names and employee details. It can display all names in a list format and add new names to the list. Users can also view a table of employee details, including employee ID, name, and position. Additionally, users can add new employees by providing their ID, name, and position, and the table will automatically update to show the new employee.</p>
-            <a href="array objects/index.html" target="_blank" rel="noopener noreferrer" className="project-link">
+            <a href="public/array objects/index.html" target="_blank" rel="noopener noreferrer" className="project-link">
               View Project
             </a>
             <img src="image/3.png" alt="Project 3 Thumbnail" className="project-thumbnail" />
