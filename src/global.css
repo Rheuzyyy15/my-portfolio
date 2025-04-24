@@ -1,62 +1,64 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #F4F4F4;
-  color: #333333;
+  background: #e8e8e8;
+  color: #4a4a4a;
   overflow-x: hidden;
   box-sizing: border-box;
 }
 
 /* Navbar styles */
 .navbar {
-  background: #3B8F9B;
+  background: #2c3e50;
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .navbar .brand {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .nav-links a:hover {
-  background-color: #FF6F61;
+  background-color: #e74c3c;
   transform: scale(1.05);
 }
 
 /* Frontpage Section */
 .frontpage {
-  background: #FFFFFF;
-  color: #333333;
+  background: #ffffff;
+  color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 80px);
   padding: 2rem;
   box-sizing: border-box;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .frontpage-content {
@@ -64,19 +66,32 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
-  gap: 2rem;
+  gap: 4rem;
   flex-wrap: wrap;
 }
 
 .frontpage-text {
   flex: 1;
-  background: #FFFFFF;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
   text-align: left;
+  max-width: 500px;
+}
+
+.frontpage-text h2 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.frontpage-text p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  line-height: 1.8;
 }
 
 .frontpage-image-container {
@@ -88,89 +103,62 @@ body {
 
 .frontpage-image {
   max-width: 100%;
-  height: auto;
-  max-height: 500px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 600px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .frontpage {
-    height: auto;
-    padding-top: 80px;
-  }
-
-  .frontpage-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .frontpage-image {
-    max-width: 70%;
-  }
-
-  .about,
-  .projects .project,
-  .social-links ul li {
-    max-width: 100%;
-    padding: 1rem;
-  }
-
-  section {
-    padding: 2rem 1rem;
-  }
-}
-
 
 /* About Section */
 .about {
-  background: #FFFFFF;
-  color: #333333;
-  padding: 3rem 2rem;
+  background: #ffffff;
+  color: #333;
+  padding: 5rem 3rem;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  margin: 4rem auto;
   max-width: 1200px;
 }
 
 .about p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: 1rem auto;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 2rem auto;
+  color: #7f8c8d;
 }
 
 .about-box {
-  background: #F4F4F4;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #f4f4f4;
+  padding: 2.5rem;
+  margin: 2rem 0;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
 .about-box h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #3B8F9B;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #2980b9;
 }
 
 .about-box p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #7F8C8D;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #7f8c8d;
 }
 
 /* Social Links */
 .social-links {
-  background: #FFFFFF;
-  color: #333333;
-  padding: 3rem 2rem;
+  background: #ffffff;
+  color: #333;
+  padding: 5rem 3rem;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  margin: 4rem auto;
+  max-width: 1200px;
 }
 
 .social-links ul {
@@ -180,91 +168,88 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .social-links ul li {
-  margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .social-links a {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   color: white;
   text-decoration: none;
-  background: #FF6F61;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  transition: background 0.3s ease, transform 0.2s ease;
+  background: #e74c3c;
+  padding: 1.5rem 3rem;
+  border-radius: 12px;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .social-links a:hover {
-  background: #FF4E42;
-  transform: scale(1.05);
+  background: #c0392b;
+  transform: scale(1.1);
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
 }
 
 /* Projects Section */
 .projects .project {
-  background: #FFFFFF;
-  padding: 1.5rem;
-  margin: 1rem auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 3rem;
+  margin: 2rem auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .projects h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
-  color: #3B8F9B;
-  text-align: center;
+  color: #2980b9;
 }
 
 .projects .project h3 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
-  color: #3B8F9B;
+  color: #2980b9;
 }
 
 .projects .project p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #7F8C8D;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #7f8c8d;
 }
 
 .project-link, .project-simple-link {
   display: inline-block;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
-  background: #3B8F9B;
-  font-size: 0.9rem;
-  padding: 0.3rem 0.8rem;
-  border-radius: 5px;
+  background: #2980b9;
+  font-size: 1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
   text-align: center;
-  width: auto;
-  margin: 0 auto 1rem;
+  margin: 0 auto 2rem;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .project-link:hover, .project-simple-link:hover {
-  background: #2C7A75;
-  transform: scale(1.05);
+  background: #1f618d;
+  transform: scale(1.1);
 }
 
 .project-thumbnail {
   display: block;
   width: 100%;
-  margin: 0.5rem 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .project-images img {
@@ -275,11 +260,15 @@ body {
 
 /* Section Headings */
 section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #3B8F9B;
+  letter-spacing: 2px;
+  color: #2980b9;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 4px solid #2980b9;
+  padding-bottom: 0.5rem;
 }
 
 /* Responsive adjustments */
@@ -287,7 +276,7 @@ section h2 {
   .frontpage-content {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
   }
 
   .frontpage-image {
@@ -299,11 +288,11 @@ section h2 {
   .projects .project,
   .social-links ul li {
     max-width: 100%;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   section {
-    padding: 2rem 1rem;
+    padding: 3rem 1.5rem;
   }
 }
 
@@ -311,24 +300,24 @@ section h2 {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .frontpage-content {
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   .frontpage-text h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .frontpage-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
