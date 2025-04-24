@@ -303,7 +303,6 @@ section {
   display: inline-block;
 }
 
-/* Section Headings */
 section h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -317,30 +316,29 @@ section h2 {
 }
 
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .frontpage {
-    height: auto; /* Adjust height to avoid overlap */
-    margin-top: 50px; /* Reduce top margin */
+    height: auto;
+    margin-top: 50px;
   }
 
   .frontpage-content {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    justify-content: center; /* Center content on smaller screens */
+    justify-content: center;
   }
 
   .frontpage-text {
-    max-width: 100%; /* Allow frontpage text to fit in smaller screens */
-    margin: 0 auto; /* Ensure center alignment */
-    padding: 2rem; /* Adjust padding */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
   }
 
   .frontpage-image {
     max-width: 100%;
     height: auto;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto;
   }
 
   .about,
@@ -381,30 +379,30 @@ section h2 {
   }
 }
 
-/* Media Query for Smaller Screens */
+
 @media (max-width: 768px) {
   section {
-    padding: 0.5rem 1rem; /* Further reduced padding on smaller screens */
-    margin: 0; /* Ensures no additional margin */
+    padding: 0.5rem 1rem;
+    margin: 0;
   }
 
   .box {
-    margin: 0.3rem auto; /* Reduced margin between boxes */
-    padding: 1rem; /* Compact padding inside the box */
+    margin: 0.3rem auto;
+    padding: 1rem;
   }
 }
 
-/* Adjustments for smaller screens */
+
 @media (max-width: 768px) {
   .social-links {
-    padding: 3rem 2rem; /* Adjust padding for smaller screens */
+    padding: 3rem 2rem;
   }
 
   .social-links ul {
-    gap: 1.5rem; /* Reduce the gap between items */
+    gap: 1.5rem;
   }
 
   .social-links a {
-    padding: 1rem 2rem; /* Reduce the padding inside the links */
+    padding: 1rem 2rem;
   }
 }
