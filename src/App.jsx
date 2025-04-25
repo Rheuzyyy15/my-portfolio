@@ -209,7 +209,7 @@ function App() {
           <div className="project">
             <h3>Currency Conversion Function</h3>
             <p>This code converts a PHP amount into various cryptocurrencies (XRP, USDT, DOGE, TRX) based on predefined rates and displays the results in corresponding input fields when the "convertButton" is clicked.</p>
-            <a href="converter_activity/index.html" target="_blank" rel="noopener noreferrer" className="project-link">
+            <a href="converter/indexx.html" target="_blank" rel="noopener noreferrer" className="project-link">
               View Project
             </a>
             <img src="image/6.png" alt="Project 5 Thumbnail" className="project-thumbnail" />
