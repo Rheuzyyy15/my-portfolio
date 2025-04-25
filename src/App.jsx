@@ -152,7 +152,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/in/mery-rose-talledo-7733a4361/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/mery-rose-talledo-463284362/" target="_blank" rel="noopener noreferrer">
                 <img src="image/linkedin.jpg" alt="LinkedIn Logo" className="social-icon" />
                 LinkedIn
               </a>
