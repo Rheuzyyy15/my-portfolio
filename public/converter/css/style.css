@@ -12,7 +12,7 @@ body {
     background: linear-gradient(to right, #E0D1F7, #D0A7F4);
     width: 90%;
     max-width: 400px;
-    padding: 30px 20px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -42,8 +42,8 @@ h1 {
 
 input {
     width: calc(100% - 20px);
-    height: 40px;
-    padding: 8px;
+    height: 45px;
+    padding: 10px;
     font-size: 16px;
     border: 1px solid #c7a6df;
     border-radius: 5px;
@@ -55,7 +55,7 @@ input {
 }
 
 button {
-    height: 40px;
+    height: 45px;
     width: 100%;
     font-size: 16px;
     border: none;
@@ -80,26 +80,28 @@ button.convert:hover {
 
 @media (max-width: 768px) {
     .calculator {
-        padding: 20px 15px;
+        padding: 20px;
     }
     h1 {
         font-size: 20px;
     }
     input, button {
         font-size: 14px;
-        height: 35px;
+        height: 40px;
+        padding: 8px;
     }
 }
 
 @media (max-width: 480px) {
     .calculator {
-        padding: 15px 10px;
+        padding: 15px;
     }
     h1 {
         font-size: 18px;
     }
     input, button {
         font-size: 12px;
-        height: 30px;
+        height: 35px;
+        padding: 6px;
     }
 }
