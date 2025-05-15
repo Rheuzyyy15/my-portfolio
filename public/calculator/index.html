@@ -18,14 +18,15 @@
         }
         .calculator {
             background: linear-gradient(to right, #E0D1F7, #D0A7F4);
-            width: 350px;
+            width: 90%;
+            max-width: 350px;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
         
         #display1, #display2, #operator {
-            width: 325px;
+            width: 100%;
             height: 50px;
             margin-bottom: 15px;
             padding: 10px;
@@ -63,6 +64,34 @@
         }
         .calculator button.equal:hover {
             background: #F0A7C0;
+        }
+
+        @media (max-width: 768px) {
+            .calculator {
+                padding: 15px;
+            }
+            #display1, #display2, #operator {
+                height: 40px;
+                font-size: 16px;
+            }
+            .calculator button {
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .calculator {
+                padding: 10px;
+            }
+            #display1, #display2, #operator {
+                font-size: 14px;
+                padding: 8px;
+            }
+            .calculator button {
+                font-size: 14px;
+                padding: 5px;
+            }
         }
     </style>
 </head>

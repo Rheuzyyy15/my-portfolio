@@ -3,20 +3,27 @@ body {
     text-align: center;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
     height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 input {
-    padding: 10px;
+    padding: 1em;
     border-radius: 20px;
     border: 2px solid #a18cd1;
     outline: none;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     box-shadow: 0 0 10px rgba(161, 140, 209, 0.5);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
 button {
@@ -25,12 +32,14 @@ button {
     border-radius: 25px;
     padding: 12px 20px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: white;
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 200px;
 }
 
 button:hover {
@@ -39,8 +48,43 @@ button:hover {
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     color: #6a5acd;
     margin-top: 20px;
+    text-align: center;
+    max-width: 80%;
+}
+
+@media (max-width: 768px) {
+    input {
+        font-size: 0.9rem;
+        padding: 0.8em;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    input {
+        font-size: 0.8rem;
+        padding: 0.7em;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
 }

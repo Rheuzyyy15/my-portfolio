@@ -10,7 +10,8 @@ body {
 
 .calculator {
     background: linear-gradient(to right, #E0D1F7, #D0A7F4);
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -40,7 +41,8 @@ h1 {
 }
 
 input {
-    width: 383px;
+    width: 100%;
+    max-width: 100%;
     height: 40px;
     padding: 8px;
     font-size: 16px;
@@ -74,4 +76,30 @@ button.convert {
 
 button.convert:hover {
     background: #B375C9;
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        padding: 20px 15px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    input, button {
+        font-size: 14px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 15px 10px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    input, button {
+        font-size: 12px;
+        height: 30px;
+    }
 }
