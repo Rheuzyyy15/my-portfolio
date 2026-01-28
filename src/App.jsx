@@ -18,6 +18,8 @@ function App() {
           <li><a href="#about" onClick={() => handleSectionChange('about')}>About</a></li>
           <li><a href="#social-links" onClick={() => handleSectionChange('social-links')}>Social Links</a></li>
           <li><a href="#projects" onClick={() => handleSectionChange('projects')}>Projects</a></li>
+          <li><a href="#certificates" onClick={() => handleSectionChange('certificates')}>Certificates</a></li>
+          <li><a href="#webinars" onClick={() => handleSectionChange('webinars')}>Webinars</a></li>
         </ul>
       </nav>
 
@@ -93,7 +95,7 @@ function App() {
             <h3>Introduction</h3>
             <p>
               <strong>Hi, I'm Mery Rose Talledo</strong><br />
-              I’m a dedicated <strong>BSIT student</strong> at the <strong>University of Abra</strong>, currently in my third year. I'm passionate about technology and the endless possibilities it offers to create innovative solutions. I come from <strong>Tabiog, Bucay, Abra</strong>, a place that has inspired my drive for continuous learning and growth.
+              I’m a dedicated <strong>BSIT student</strong> at the <strong>University of Abra</strong>, currently in my fourth year. I'm passionate about technology and the endless possibilities it offers to create innovative solutions. I come from <strong>Tabiog, Bucay, Abra</strong>, a place that has inspired my drive for continuous learning and growth.
             </p>
           </div>
 
@@ -228,6 +230,94 @@ function App() {
           </div>
         </section>
       )}
+
+      {/* Certificates Section */}
+{visibleSection === 'certificates' && (
+  <section id="certificates" className="certificates">
+    <h2>Certificates</h2>
+
+    <div className="certificate">
+      <h3>Apply AI: Analyze Customer Reviews</h3>
+      <p>
+      Certificate of Completion is awarded for successfully finishing the course “Apply AI: Analyze Customer Reviews,” 
+      which focuses on using artificial intelligence to examine customer feedback, identify trends, and generate insights 
+      to improve business decisions.
+      </p>
+      <img
+        src="image/ac.jpeg"
+        alt="Introduction to JavaScript Certificate"
+        className="certificate-thumbnail"
+      />
+    </div>
+
+    <div className="certificate">
+      <h3>AI Fundamentals with IBM SkillsBuild</h3>
+      <p>
+      Certificate of Completion is awarded for successfully finishing the course “AI Fundamentals with IBM SkillsBuild,” 
+      which provides foundational knowledge of artificial intelligence concepts, terminology, and real-world applications.
+      </p>
+      <img
+        src="image/af.jpeg"
+        alt="React Fundamentals Certificate"
+        className="certificate-thumbnail"
+      />
+    </div>
+
+    <div className="certificate">
+      <h3>Apply AI: Update Your Resume</h3>
+      <p>
+      Certificate of Completion is awarded for successfully finishing the course “Apply AI: Update Your Resume,” 
+      which demonstrates how AI tools can be used to enhance resume content, structure, and job relevance.
+      </p>
+      <img
+        src="image/au.jpeg"
+        alt="Web Development Certificate"
+        className="certificate-thumbnail"
+      />
+    </div>
+
+    <div className="certificate">
+      <h3>Introduction to Data Science</h3>
+      <p>
+      Certificate of Completion is awarded for successfully finishing the course “Introduction to Data Science,” 
+      which introduces key data science concepts such as data analysis, interpretation, and data-driven decision-making.
+      </p>
+      <img
+        src="image/ad.jpeg"
+        alt="Cybersecurity Certificate"
+        className="certificate-thumbnail"
+      />
+    </div>
+
+    <div className="certificate">
+      <h3>Introduction to Modern AI</h3>
+      <p>
+      Certificate of Completion is awarded for successfully finishing the course “Introduction to Modern AI,” 
+      which explores modern artificial intelligence technologies and their applications across various industries.
+      </p>
+      <img
+        src="image/im.jpeg"
+        alt="Cybersecurity Certificate"
+        className="certificate-thumbnail"
+      />
+    </div>
+
+    <div className="certificate">
+      <h3>Python Essensials 1</h3>
+      <p>
+      Certificate of Completion is awarded for successfully finishing the course “Python Essentials,”
+      which covers the fundamentals of Python programming, including variables, data types, control structures, 
+      functions, and basic problem-solving techniques for real-world applications.
+      </p>
+      <img
+        src="image/pe.png"
+        alt="Cybersecurity Certificate"
+        className="certificate-thumbnail"
+      />
+    </div>
+  </section>
+)}
+
 
 
     </div>
