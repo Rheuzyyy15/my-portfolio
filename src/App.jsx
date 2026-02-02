@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import './global.css';
+import React, { useState } from "react";
+import "./global.css";
 
 function App() {
-  const [visibleSection, setVisibleSection] = useState('frontpage');
+  const [visibleSection, setVisibleSection] = useState("frontpage");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleSectionChange = (section) => {
     setVisibleSection(section);
+    setMenuOpen(false);
   };
 
   return (
@@ -13,20 +15,25 @@ function App() {
       {/* Navbar */}
       <nav className="navbar">
         <h1 className="brand">My Portfolio</h1>
-        <ul className="nav-links">
-          <li><a href="#frontpage" onClick={() => handleSectionChange('frontpage')}>Home</a></li>
-          <li><a href="#about" onClick={() => handleSectionChange('about')}>About</a></li>
-          <li><a href="#social-links" onClick={() => handleSectionChange('social-links')}>Social Links</a></li>
-          <li><a href="#projects" onClick={() => handleSectionChange('projects')}>Projects</a></li>
-          <li><a href="#certificates" onClick={() => handleSectionChange('certificates')}>Certificates</a></li>
-          <li><a href="#webinars" onClick={() => handleSectionChange('webinars')}>Webinars</a></li>
+
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <li><a onClick={() => handleSectionChange("frontpage")}>Home</a></li>
+          <li><a onClick={() => handleSectionChange("about")}>About</a></li>
+          <li><a onClick={() => handleSectionChange("social-links")}>Social Links</a></li>
+          <li><a onClick={() => handleSectionChange("projects")}>Projects</a></li>
+          <li><a onClick={() => handleSectionChange("certificates")}>Certificates</a></li>
+          <li><a onClick={() => handleSectionChange("webinars")}>Webinars</a></li>
         </ul>
 
-        <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        {/* Hamburger */}
+        <div
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
       
 {/* Frontpage / Hero Section */}
