@@ -21,8 +21,14 @@ function App() {
           <li><a href="#certificates" onClick={() => handleSectionChange('certificates')}>Certificates</a></li>
           <li><a href="#webinars" onClick={() => handleSectionChange('webinars')}>Webinars</a></li>
         </ul>
-      </nav>
 
+        <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </nav>
+      
 {/* Frontpage / Hero Section */}
 {visibleSection === 'frontpage' && (
   <>
@@ -315,8 +321,33 @@ function App() {
         className="certificate-thumbnail"
       />
     </div>
+
   </section>
 )}
+
+      {/* webinars Section */}
+      {visibleSection === 'webinars' && (
+  <section id="webinars" className="webinars">
+    <h2>Webinars Attended</h2>
+
+    <div className="webinar">
+      <h3>Digital Safety</h3>
+      <p>
+      Certificate of Completion is awarded for successfully finishing the course
+      “Digital Safety,” which focuses on safe online practices, protecting personal
+      information, recognizing cyber threats, and promoting responsible and secure
+      use of digital technologies.
+      </p>
+      <img
+        src="image/web1.jpg"
+        alt="Introduction to JavaScript Certificate"
+        className="webinars-thumbnail"
+      />
+    </div>
+
+  </section>
+)}
+
 
 
 
